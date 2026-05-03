@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from statsmodels.nonparametric.kdetools import counts
 
 # print("hello")
 
@@ -37,5 +36,5 @@ print(df['brand'].nunique())
 threshold = 100
 repl = counts[counts <= threshold].index
 
-print(pd.get_dummies(df['brand']).replace(repl, 'uncommon').sample(5))
+print(pd.get_dummies(df['brand']).replace(repl, 'uncommon'))
 
