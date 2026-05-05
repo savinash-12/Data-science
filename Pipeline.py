@@ -75,7 +75,7 @@ with open("pipeline.html", "w", encoding="utf-8") as f:
     f.write(html)
 
 # import webbrowser
-webbrowser.open("pipeline.html")
+# webbrowser.open("pipeline.html")
 
 #Predict
 y_pred = pipe.predict(x_test)
